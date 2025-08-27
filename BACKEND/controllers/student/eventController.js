@@ -1,5 +1,5 @@
-import Event from "../models/Event.js";
-import Student from "../models/Student.js";
+import Event from "../../models/Event.js";
+import Student from "../../models/Student.js";
 
 
 // ✅ Get all upcoming events

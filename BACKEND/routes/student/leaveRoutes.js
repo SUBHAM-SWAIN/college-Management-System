@@ -1,6 +1,6 @@
 import express from "express";
-import { getLeaves, submitLeave } from "../controllers/leaveController.js";
-import { protect } from "../middleware/authMiddleware.js";
+import { getLeaves, submitLeave } from "../../controllers/student/leaveController.js";
+import { protect } from "../../middleware/authMiddleware.js";
 
 const router = express.Router();
 

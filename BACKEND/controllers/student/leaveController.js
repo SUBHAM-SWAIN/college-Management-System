@@ -1,5 +1,5 @@
-import Leave from "../models/Leave.js"; // leave model
-import Student from "../models/Student.js";
+import Leave from "../../models/Leave.js"; // leave model
+import Student from "../../models/Student.js";
 
 // @desc    Get all leave requests for logged-in student
 // @route   GET /api/leaves

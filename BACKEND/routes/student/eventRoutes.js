@@ -3,8 +3,8 @@ import {
   getEvents,
   getAllEvents,
   registerForEvent,
-} from "../controllers/eventController.js";
-import { protect } from "../middleware/authMiddleware.js";
+} from "../../controllers/student/eventController.js";
+import { protect } from "../../middleware/authMiddleware.js";
 
 const router = express.Router();
 

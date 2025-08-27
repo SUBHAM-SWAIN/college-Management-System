@@ -1,4 +1,4 @@
-import Student from "../models/Student.js";
+import Student from "../../models/Student.js";
 
 // @desc    Get logged-in student's profile
 // @route   GET /api/students/profile

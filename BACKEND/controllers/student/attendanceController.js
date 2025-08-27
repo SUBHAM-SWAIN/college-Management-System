@@ -1,4 +1,4 @@
-import Attendance from "../models/Attendance.js";
+import Attendance from "../../models/Attendance.js";
 
 // ✅ Get logged-in student's attendance
 export const getMyAttendance = async (req, res) => {

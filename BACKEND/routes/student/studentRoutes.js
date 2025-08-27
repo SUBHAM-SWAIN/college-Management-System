@@ -2,8 +2,8 @@ import express from "express";
 import {
   getStudentProfile,
   updateStudentProfile,
-} from "../controllers/studentController.js";
-import { protect } from "../middleware/authMiddleware.js";
+} from "../../controllers/student/studentController.js";
+import { protect } from "../../middleware/authMiddleware.js";
 
 const router = express.Router();
 

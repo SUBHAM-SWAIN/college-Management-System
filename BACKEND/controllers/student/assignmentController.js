@@ -1,5 +1,5 @@
-import Assignment from "../models/Assignment.js";
-import Student from "../models/Student.js";
+import Assignment from "../../models/Assignment.js";
+import Student from "../../models/Student.js";
 import path from "path";
 
 // Get all assignments

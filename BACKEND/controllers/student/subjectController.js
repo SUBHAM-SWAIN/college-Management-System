@@ -1,4 +1,4 @@
-import Subject from "../models/Subject.js";
+import Subject from "../../models/Subject.js";
 
 // ✅ Get subjects of student's course
 export const getMySubjects = async (req, res) => {

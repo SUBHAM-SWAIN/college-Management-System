@@ -3,13 +3,14 @@ import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./utils/db.js";
 
-import attendanceRoutes from "./routes/attendanceRoutes.js";
-import gradeRoutes from "./routes/gradeRoutes.js";
-import subjectRoutes from "./routes/subjectRoutes.js";
-import eventRoutes from "./routes/eventRoutes.js";
-import studentRoutes from "./routes/studentRoutes.js";
-import leaveRoutes from "./routes/leaveRoutes.js";
-import assignmentRoutes from "./routes/assignmentRoutes.js"; // new
+import attendanceRoutes from "./routes/student/attendanceRoutes.js";
+import gradeRoutes from "./routes/student/gradeRoutes.js";
+import subjectRoutes from "./routes/student/subjectRoutes.js";
+import eventRoutes from "./routes/student/eventRoutes.js";
+import studentRoutes from "./routes/student/studentRoutes.js";
+import leaveRoutes from "./routes/student/leaveRoutes.js";
+import assignmentRoutes from "./routes/student/assignmentRoutes.js"; // new
+import libraryRoutes from "./routes/student/libraryRoutes.js";
 
 dotenv.config();
 connectDB();
@@ -28,7 +29,8 @@ app.use("/api/grades", gradeRoutes);
 app.use("/api/subjects", subjectRoutes);
 app.use("/api/events", eventRoutes);
 app.use("/api/leaves", leaveRoutes);
-app.use("/api/assignments", assignmentRoutes); // assignment routes
+app.use("/api/assignments", assignmentRoutes);
+app.use("/api/library", libraryRoutes);
 
 // Default route
 app.get("/", (req, res) => res.send("API is running..."));

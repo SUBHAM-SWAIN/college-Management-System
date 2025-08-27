@@ -1,4 +1,4 @@
-import Grade from "../models/Grade.js";
+import Grade from "../../models/Grade.js";
 
 // ✅ Get logged-in student's grades
 export const getMyGrades = async (req, res) => {

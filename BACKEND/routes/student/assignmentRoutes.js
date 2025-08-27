@@ -5,9 +5,9 @@ import {
   createAssignment,
   submitAssignment,
   downloadAssignmentFile,
-} from "../controllers/assignmentController.js";
-import upload from "../middleware/multer.js"; // multer middleware
-import { protect } from "../middleware/authMiddleware.js"; // optional: authentication middleware
+} from "../../controllers/student/assignmentController.js";
+import upload from "../../middleware/multer.js"; // multer middleware
+import { protect } from "../../middleware/authMiddleware.js"; // optional: authentication middleware
 
 const router = express.Router();
 
