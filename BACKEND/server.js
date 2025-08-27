@@ -12,6 +12,11 @@ import leaveRoutes from "./routes/student/leaveRoutes.js";
 import assignmentRoutes from "./routes/student/assignmentRoutes.js"; // new
 import libraryRoutes from "./routes/student/libraryRoutes.js";
 
+//Faculty Routes
+
+import facultyRoutes from "./routes/faculity/facultyRoutes.js";
+
+
 dotenv.config();
 connectDB();
 
@@ -31,6 +36,10 @@ app.use("/api/events", eventRoutes);
 app.use("/api/leaves", leaveRoutes);
 app.use("/api/assignments", assignmentRoutes);
 app.use("/api/library", libraryRoutes);
+
+//Faculty Routes
+app.use("/api/faculty", facultyRoutes);
+
 
 // Default route
 app.get("/", (req, res) => res.send("API is running..."));
