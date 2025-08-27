@@ -15,6 +15,7 @@ const eventSchema = new mongoose.Schema(
     maxParticipants: { type: Number },
     registeredCount: { type: Number, default: 0 },
     participants: [{ type: mongoose.Schema.Types.ObjectId, ref: "Student" }],
+    createdBy: { type: mongoose.Schema.Types.ObjectId, ref: "Faculty", required: true },
   },
   { timestamps: true }
 );

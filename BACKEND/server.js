@@ -15,7 +15,10 @@ import libraryRoutes from "./routes/student/libraryRoutes.js";
 //Faculty Routes
 
 import facultyRoutes from "./routes/faculity/facultyRoutes.js";
-
+import facultyAttendanceRoutes from "./routes/faculity/attendanceRoutes.js";
+import facultyEventRoutes from "./routes/faculity/eventRoutes.js";
+import materialRoutes from "./routes/faculity/materialRoutes.js";
+import facultyAssignmentRoutes from "./routes/faculity/assignmentRoutes.js"; // naya router
 
 dotenv.config();
 connectDB();
@@ -39,7 +42,10 @@ app.use("/api/library", libraryRoutes);
 
 //Faculty Routes
 app.use("/api/faculty", facultyRoutes);
-
+app.use("/api/attendance", facultyAttendanceRoutes);
+app.use("/api/events", facultyEventRoutes);
+app.use("/api/materials", materialRoutes);
+app.use("/api/assignments", facultyAssignmentRoutes); // Assignment & submissions routes
 
 // Default route
 app.get("/", (req, res) => res.send("API is running..."));

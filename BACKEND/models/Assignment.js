@@ -13,6 +13,8 @@ const assignmentSchema = new mongoose.Schema(
         studentId: { type: mongoose.Schema.Types.ObjectId, ref: "Student" },
         fileUrl: String,
         submittedAt: Date,
+        grade: Number,
+        status: { type: String, enum: ["submitted","graded","late"], default: "submitted" }
       },
     ],
   },
